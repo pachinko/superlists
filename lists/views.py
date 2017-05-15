@@ -4,5 +4,6 @@ from django.http import HttpResponse
 
 #home_page = None
 def home_page(request):
-    return HttpResponse('<html><Title>To-Do lists </Title></html>')
+    return render(request, 'home.html')
+#    return HttpResponse('<html><Title>To-Do lists </Title></html>')
 #    pass
